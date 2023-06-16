@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81ee598a-2405-49cb-857c-198615192c49">
+	<property name="ireport.zoom" value="1.4641000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="59"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     menu.`kode_menu` AS menu_kode_menu,
+     menu.`nama_menu` AS menu_nama_menu,
+     menu.`kategori` AS menu_kategori,
+     menu.`harga` AS menu_harga
+FROM
+     `menu` menu]]>
+	</queryString>
+	<field name="menu_kode_menu" class="java.lang.String"/>
+	<field name="menu_nama_menu" class="java.lang.String"/>
+	<field name="menu_kategori" class="java.lang.String"/>
+	<field name="menu_harga" class="java.lang.Integer"/>
+	<variable name="menu_nama_menu_1" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{menu_nama_menu}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="71" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="5a5dfb92-b369-4be1-803f-6f4c2b4ff4ce" x="-20" y="-22" width="596" height="90" forecolor="#000000" backcolor="#FFCC00"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="2dd66578-d853-4c81-bfa4-1ab91a142a89" x="180" y="-10" width="212" height="27" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tw Cen MT Condensed Extra Bold" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GOVERNOR BURGER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2dd66578-d853-4c81-bfa4-1ab91a142a89" x="255" y="28" width="68" height="11" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tw Cen MT Condensed Extra Bold" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[081289803804]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2dd66578-d853-4c81-bfa4-1ab91a142a89" x="166" y="17" width="246" height="11" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tw Cen MT Condensed Extra Bold" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jln Pedati Selatan No.34 Pasar Rebo - Jakarta Timur ]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="06a3548d-4315-4ee2-8545-92c4e2b557ac" x="84" y="-16" width="79" height="76"/>
+				<imageExpression><![CDATA["C:\\Users\\Asus\\OneDrive\\Documents\\NetBeansProjects\\Kasir\\src\\icon\\governor 250.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement uuid="209990ce-e40f-432e-93f4-c50c3cb0ca0a" x="176" y="45" width="225" height="1" forecolor="#000000"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="32" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="9aa89df9-4def-4a34-b810-977eee8a97b8" x="202" y="6" width="178" height="18"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="2dd66578-d853-4c81-bfa4-1ab91a142a89" x="202" y="6" width="178" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tw Cen MT Condensed Extra Bold" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Menu]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="493a85fc-f602-4d4b-a54e-fe402687777c" x="0" y="0" width="555" height="27" backcolor="#FF9933"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="7d3a2b91-7e2b-403e-8b2d-311b27d2e5b2" mode="Opaque" x="1" y="3" width="138" height="20" forecolor="#000000" backcolor="#FF9933"/>
+				<box>
+					<pen lineStyle="Double" lineColor="#FFCC33"/>
+					<topPen lineStyle="Double" lineColor="#FFCC33"/>
+					<leftPen lineStyle="Double" lineColor="#FFCC33"/>
+					<bottomPen lineStyle="Double" lineColor="#FFCC33"/>
+					<rightPen lineStyle="Double" lineColor="#FFCC33"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Menu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d3a2b91-7e2b-403e-8b2d-311b27d2e5b2" mode="Opaque" x="139" y="3" width="138" height="20" forecolor="#000000" backcolor="#FF9933"/>
+				<box>
+					<pen lineStyle="Double" lineColor="#FFCC33"/>
+					<topPen lineStyle="Double" lineColor="#FFCC33"/>
+					<leftPen lineStyle="Double" lineColor="#FFCC33"/>
+					<bottomPen lineStyle="Double" lineColor="#FFCC33"/>
+					<rightPen lineStyle="Double" lineColor="#FFCC33"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Menu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d3a2b91-7e2b-403e-8b2d-311b27d2e5b2" mode="Opaque" x="278" y="3" width="138" height="20" forecolor="#000000" backcolor="#FF9933"/>
+				<box>
+					<pen lineStyle="Double" lineColor="#FFCC33"/>
+					<topPen lineStyle="Double" lineColor="#FFCC33"/>
+					<leftPen lineStyle="Double" lineColor="#FFCC33"/>
+					<bottomPen lineStyle="Double" lineColor="#FFCC33"/>
+					<rightPen lineStyle="Double" lineColor="#FFCC33"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kategori]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d3a2b91-7e2b-403e-8b2d-311b27d2e5b2" mode="Opaque" x="416" y="3" width="138" height="20" forecolor="#000000" backcolor="#FF9933"/>
+				<box>
+					<pen lineStyle="Double" lineColor="#FFCC33"/>
+					<topPen lineStyle="Double" lineColor="#FFCC33"/>
+					<leftPen lineStyle="Double" lineColor="#FFCC33"/>
+					<bottomPen lineStyle="Double" lineColor="#FFCC33"/>
+					<rightPen lineStyle="Double" lineColor="#FFCC33"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="7c6c5c5d-e1c7-4b4e-844c-4f2894cc2a80" x="415" y="0" width="140" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7c6c5c5d-e1c7-4b4e-844c-4f2894cc2a80" x="277" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7c6c5c5d-e1c7-4b4e-844c-4f2894cc2a80" x="139" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7c6c5c5d-e1c7-4b4e-844c-4f2894cc2a80" x="0" y="0" width="139" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="393122e5-28c5-4409-bc53-a0c26b353058" x="0" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{menu_kode_menu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a720754a-4e84-4053-adba-0670e335c0c0" x="138" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{menu_nama_menu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9e136d8d-414c-4c92-8108-59fde8e31566" x="276" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{menu_kategori}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bf9b8a65-78ae-460e-a636-4adafb519077" x="414" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{menu_harga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="206" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="f130958b-bd28-4cbb-ab24-516f9faa0fb5" x="240" y="9" width="100" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="5139910d-91c3-4341-9dd7-dcd8bf7691a5" x="1" y="11" width="239" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jumlah menu yang ada di Resto Governor Burger   :]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="12d3a5d7-87fe-47a5-99b5-12eeea5f2f84" x="249" y="11" width="17" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{menu_nama_menu_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5139910d-91c3-4341-9dd7-dcd8bf7691a5" x="266" y="11" width="61" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Menu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5139910d-91c3-4341-9dd7-dcd8bf7691a5" x="358" y="182" width="103" height="20"/>
+				<textElement/>
+				<text><![CDATA[Pemilik Resto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5139910d-91c3-4341-9dd7-dcd8bf7691a5" x="358" y="162" width="89" height="20"/>
+				<textElement/>
+				<text><![CDATA[Ega Maulana S.Pd.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5139910d-91c3-4341-9dd7-dcd8bf7691a5" x="358" y="75" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="5c358160-79d1-4fd8-a920-0e15f5258140" x="401" y="55" width="154" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMM yyyy", new Locale("id", "ID")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5139910d-91c3-4341-9dd7-dcd8bf7691a5" x="358" y="55" width="53" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

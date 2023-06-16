@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="226" pageHeight="431" columnWidth="186" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="aaf7be79-1e9a-4062-ba5d-20b8a0edbe03">
+	<property name="ireport.zoom" value="1.862763969177466"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="73"/>
+	<parameter name="nopes" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     *,
+     transaksi_rinci.`nopes` AS transaksi_rinci_nopes,
+     transaksi_rinci.`tanggal` AS transaksi_rinci_tanggal,
+     transaksi_rinci.`waktu` AS transaksi_rinci_waktu,
+     transaksi_rinci.`kode_menu` AS transaksi_rinci_kode_menu,
+     transaksi_rinci.`nama_menu` AS transaksi_rinci_nama_menu,
+     transaksi_rinci.`harga` AS transaksi_rinci_harga,
+     transaksi_rinci.`qty` AS transaksi_rinci_qty,
+     transaksi_rinci.`amount` AS transaksi_rinci_amount,
+     transaksi_rinci.`total` AS transaksi_rinci_total,
+     transaksi_rinci.`diskon` AS transaksi_rinci_diskon,
+     transaksi_rinci.`metode` AS transaksi_rinci_metode,
+     transaksi_rinci.`bayar` AS transaksi_rinci_bayar,
+     transaksi_rinci.`kembalian` AS transaksi_rinci_kembalian
+FROM
+     `transaksi_rinci` transaksi_rinci
+WHERE
+nopes = $P{nopes}]]>
+	</queryString>
+	<field name="nopes" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="waktu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kode_menu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_menu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diskon" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="metode" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bayar" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kembalian" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="transaksi_rinci_nopes" class="java.lang.String"/>
+	<field name="transaksi_rinci_tanggal" class="java.lang.String"/>
+	<field name="transaksi_rinci_waktu" class="java.lang.String"/>
+	<field name="transaksi_rinci_kode_menu" class="java.lang.String"/>
+	<field name="transaksi_rinci_nama_menu" class="java.lang.String"/>
+	<field name="transaksi_rinci_harga" class="java.lang.Integer"/>
+	<field name="transaksi_rinci_qty" class="java.lang.Integer"/>
+	<field name="transaksi_rinci_amount" class="java.lang.Integer"/>
+	<field name="transaksi_rinci_total" class="java.lang.Integer"/>
+	<field name="transaksi_rinci_diskon" class="java.lang.Integer"/>
+	<field name="transaksi_rinci_metode" class="java.lang.String"/>
+	<field name="transaksi_rinci_bayar" class="java.lang.Integer"/>
+	<field name="transaksi_rinci_kembalian" class="java.lang.Integer"/>
+	<variable name="amount_1" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{amount}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="81a2be8d-3e57-45dc-ac55-c50fdf6781b2" x="0" y="4" width="186" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Berlin Sans FB"/>
+				</textElement>
+				<text><![CDATA[Governor Burger, Cijantung]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81a2be8d-3e57-45dc-ac55-c50fdf6781b2" x="-1" y="16" width="186" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Berlin Sans FB"/>
+				</textElement>
+				<text><![CDATA[Kamp. Pule Rt 03 Rw 010 No.34]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81a2be8d-3e57-45dc-ac55-c50fdf6781b2" x="-1" y="29" width="186" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Berlin Sans FB"/>
+				</textElement>
+				<text><![CDATA[Jakarta Timur - 081289803804]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81a2be8d-3e57-45dc-ac55-c50fdf6781b2" x="-20" y="49" width="226" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[=======================================================]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="81a2be8d-3e57-45dc-ac55-c50fdf6781b2" x="-11" y="0" width="81" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<text><![CDATA[Nomor Pesanan]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ae12f594-3300-404d-84ef-baa2a5016d1c" x="100" y="0" width="62" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nopes}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1dcac743-793f-45f2-b61e-f685e3e6038e" x="-11" y="20" width="73" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<text><![CDATA[Tanggal, Waktu]]></text>
+			</staticText>
+			<textField pattern="dd-MMM">
+				<reportElement uuid="8de3e6f7-20eb-4944-b466-cb16a4b88ac8" x="100" y="20" width="62" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="55ccace2-2c82-4929-9b61-7e4a624d74a4" x="162" y="20" width="44" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{waktu}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="81a2be8d-3e57-45dc-ac55-c50fdf6781b2" x="-20" y="40" width="226" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[=======================================================]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement uuid="f4e3c99c-0596-46ff-b7e3-da5823fb0a57" x="0" y="0" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kode_menu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e719eeb3-579b-4cdd-ae2b-60e47dd199e9" x="51" y="0" width="73" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_menu}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement uuid="25b90285-0cce-4128-a18d-fb00d03bf90d" x="51" y="20" width="62" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3e4a07f0-809c-4577-b91c-dbb7e3ac17d3" x="0" y="20" width="19" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement uuid="87781787-2374-4c61-b902-2615939700e3" x="148" y="20" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="344a2455-74d3-4a5c-8fa3-3e8617da4ddc" x="19" y="20" width="10" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<text><![CDATA[x]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="141">
+			<textField pattern="#,##0">
+				<reportElement uuid="a6a53e7b-6eda-433a-9e63-4ecb513307d6" x="149" y="61" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3d3273d8-e9a4-4795-b90c-d696c4861118" x="0" y="101" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{metode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="615dce60-2c6c-489c-85a3-07d2d3556722" x="0" y="61" width="62" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<text><![CDATA[Grand Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="615dce60-2c6c-489c-85a3-07d2d3556722" x="0" y="21" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<text><![CDATA[Subtotal]]></text>
+			</staticText>
+			<textField pattern="#,##0">
+				<reportElement uuid="2b73ca76-eab5-4fa0-a2d9-3add81db5771" x="148" y="101" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bayar}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="81a2be8d-3e57-45dc-ac55-c50fdf6781b2" x="-20" y="80" width="226" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[=======================================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81a2be8d-3e57-45dc-ac55-c50fdf6781b2" x="-20" y="0" width="226" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[=======================================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1ba48cfd-f31c-40f4-8f30-b5952a36eb67" x="0" y="41" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<text><![CDATA[Diskon]]></text>
+			</staticText>
+			<textField pattern="#,##0">
+				<reportElement uuid="f0420ffb-01de-43ff-84e1-ee68a6fac950" x="149" y="41" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diskon}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement uuid="2c1f71cf-7505-4e13-8111-0395aeca553c" x="149" y="121" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kembalian}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement uuid="8de045eb-781d-4d84-a67d-b8e73bafeb90" x="149" y="20" width="37" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{amount_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="306555cb-94e7-45da-a0ed-fd71f52bb98a" x="0" y="121" width="62" height="20"/>
+				<textElement>
+					<font fontName="Californian FB"/>
+				</textElement>
+				<text><![CDATA[Kembalian]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
